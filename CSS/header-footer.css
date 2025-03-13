@@ -103,7 +103,7 @@
   left: 50px;
 }
 .action.active ul {
-  bottom: -200px;
+  bottom: -220px;
   opacity: 1;
   visibility: visible;
   transition: .3s;
@@ -123,7 +123,7 @@
   font-weight: 600;
 }
 .action ul li:not(:last-child) {
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  /* border-bottom: 1px solid rgba(0,0,0,0.1); */
 }
 .action ul li img {
   margin-right: 15px;

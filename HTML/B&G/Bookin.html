@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الحجز</title>
     <link rel="stylesheet" href="../../CSS/B&GStyle/bookin.css">
+    <link rel="stylesheet" href="../../popup.css">
     <link rel="stylesheet" href="../../CSS/header-footer.css">
     <link rel="shortcut icon" type="x-icon" href="../../icons/event-logo.png">
 </head>
@@ -46,16 +47,25 @@
                     <textarea required="" cols="50" rows="10" id="textarea" name="textarea"></textarea>
                   </div>
             </form>
-            <form  action="Booked.html">
-                <input class="btn" type="submit" value="تأكيد الحجز" />
+            <form  action="#"> 
+                <input class="btn"id="openPopup" type="submit" value="تأكيد الحجز" /> 
             </form>
+             <!-- <button id="openPopup">فتح البوب أب</button>  -->
 
           
 
         </div>
         
       </div>
-
+      <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2>مرحبًا!</h2>
+            <img class="img-check" src="../../icons/check.png" alt="">
+            <p>تــم الحــجـــــز</p>
+            <a class="btn" href="../home.html">الـــعـــودة للــرئــيـســـيـــة</a>
+        </div>
+    </div>
       <section class="footer">
 
         <div class="box-container">
@@ -85,5 +95,7 @@
         <div class="credit">created by <span> <a href="../home.html">EVENT</a></span></div>
     
       </section>
+      <script src="../../popup.js"></script>
+
 </body>
 </html>
